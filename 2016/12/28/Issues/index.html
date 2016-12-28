@@ -8,16 +8,20 @@
 
 <title>
   
-    KevinBlog
+    jirengu创建的题库
   
 </title>
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="KevinBlog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="github点我这个非常棒，没事就去刷刷题。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="jirengu创建的题库">
+<meta property="og:url" content="http://yoursite.com/2016/12/28/Issues/index.html">
 <meta property="og:site_name" content="KevinBlog">
+<meta property="og:description" content="github点我这个非常棒，没事就去刷刷题。">
+<meta property="og:updated_time" content="2016-12-28T08:23:45.838Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="KevinBlog">
+<meta name="twitter:title" content="jirengu创建的题库">
+<meta name="twitter:description" content="github点我这个非常棒，没事就去刷刷题。">
 
 
   <link rel="alternative" href="/atom.xml" title="KevinBlog" type="application/atom+xml">
@@ -132,307 +136,58 @@
       
         <div style="max-width: 1000px">
       
-          
-
+          <article id="post-Issues" class="article article-type-post">
+  
+    <h1 class="article-header">
+      jirengu创建的题库
+    </h1>
   
   
-    <div class="post-list">
-  
 
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2016/12/28/Issues/" >
-  jirengu创建的题库
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2016/12/28/Issues/"><span class="article-date">
+  <div class="article-info">
+    <span class="article-date">
   2016-12-28
 </span>
-</a>
-        
 
-        
+    
+
+    
 	<span class="article-tag tagcloud">
 		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/work/">work</a></li></ul>
 	</span>
 
 
-      </div>
-      <div class="article-entry">
-        
-          <p><a href="https://github.com/jirengu/frontend-interview">github点我</a><br>这个非常棒，没事就去刷刷题。</p>
-          <p>
-            <a href="/2016/12/28/Issues/">
-              Read More
-            </a>
-          </p>
-        
-      </div>
-    </div>
+  </div>
+  <div class="article-entry">
+    <p><a href="https://github.com/jirengu/frontend-interview" target="_blank" rel="external">github点我</a><br>这个非常棒，没事就去刷刷题。</p>
+<a id="more"></a>
+<p>1、<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = &#123;<span class="attr">n</span>:<span class="number">1</span>&#125;; </div><div class="line"><span class="keyword">var</span> b = a;  </div><div class="line">a = &#123;<span class="attr">n</span>:<span class="number">2</span>&#125;; </div><div class="line">a.x = a ;</div><div class="line"><span class="built_in">console</span>.log(a.x); <span class="comment">// &#123;n:2&#125;</span></div><div class="line"><span class="built_in">console</span>.log(b.x); <span class="comment">// undefined</span></div><div class="line"><span class="comment">//b指向的对象a已经重置了，所以当a设置x的时候和b无关。所以b.x = undefined</span></div></pre></td></tr></table></figure></p>
+<p>2、<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = &#123;<span class="attr">n</span>:<span class="number">1</span>&#125;; </div><div class="line"><span class="keyword">var</span> b = a;  </div><div class="line">a.x = a = &#123;<span class="attr">n</span>:<span class="number">2</span>&#125;; </div><div class="line"><span class="built_in">console</span>.log(a.x);</div><div class="line"><span class="built_in">console</span>.log(b.x);</div><div class="line"><span class="comment">/* </span></div><div class="line">.运算符优先于=</div><div class="line"></div><div class="line"></div><div class="line">1 a.x  变量a和b都有x </div><div class="line">2 a=&#123; n:2 &#125; 变量a重新指向到 &#123; n: 2 &#125;</div><div class="line">3 a =&gt; &#123;n: 2&#125;</div><div class="line">   b =&gt; &#123;n: 1, x: &#123;n: 2 &#125; &#125;   </div><div class="line">*/</div></pre></td></tr></table></figure></p>
+<p>3、<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">~操作符</div><div class="line"><span class="keyword">var</span> n1 = <span class="number">10</span>;</div><div class="line"><span class="keyword">var</span> n2 = ~<span class="number">10</span>;</div><div class="line"><span class="comment">//转换成二进制 取反数。</span></div><div class="line"><span class="comment">//10转换成 </span></div><div class="line"><span class="comment">//0000000000000000001010 =&gt;1111111111111111110101 </span></div><div class="line"><span class="comment">//n2 = -11;</span></div></pre></td></tr></table></figure></p>
 
-  
-    </div>
-  
-
-  
-  
-    <div class="post-list">
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2016/12/28/高程复习三/" >
-  高程复习三
-</a>
-
-      </h3>
+  </div>
+  <footer class="article-footer">
+    
+  <div class="cc">
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank" title="Attribution-ShareAlike">
+      <img src="/images/cc/cc.png">
       
-
-      <div class="article-info">
-        <a href="/2016/12/28/高程复习三/"><span class="article-date">
-  2016-12-28
-</span>
-</a>
+          <img src="/images/cc/by.png">
         
-
-        
-	<span class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/work/">work</a></li></ul>
-	</span>
-
-
-      </div>
-      <div class="article-entry">
-        
-          <p>花了三四天大略地复习了下高程三，接下来看nodejs。</p>
-          <p>
-            <a href="/2016/12/28/高程复习三/">
-              Read More
-            </a>
-          </p>
-        
-      </div>
-    </div>
-
-  
-    </div>
-  
-
-  
-  
-    <div class="post-list">
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2016/12/27/1/" >
-  高程三复习2
-</a>
-
-      </h3>
+          <img src="/images/cc/sa.png">
       
-
-      <div class="article-info">
-        <a href="/2016/12/27/1/"><span class="article-date">
-  2016-12-27
-</span>
-</a>
-        
-
-        
-	<span class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/work/">work</a></li></ul>
-	</span>
+      <span>
+        This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+      </span>
+    </a>
+  </div>
 
 
-      </div>
-      <div class="article-entry">
-        
-          <p>复习第二天 刷不动了去看nodejs了。<br>
-          <p>
-            <a href="/2016/12/27/1/">
-              Read More
-            </a>
-          </p>
-        
-      </div>
-    </div>
+    
 
-  
-    </div>
-  
+  </footer>
+</article>
 
-  
-  
-    <div class="post-list">
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2016/12/26/高程三复习/" >
-  高程三复习
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2016/12/26/高程三复习/"><span class="article-date">
-  2016-12-26
-</span>
-</a>
-        
-
-        
-	<span class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/work/">work</a></li></ul>
-	</span>
-
-
-      </div>
-      <div class="article-entry">
-        
-          <p>最近投了几个超帅的公司要面试，所以再复习一下高程三。</p>
-          <p>
-            <a href="/2016/12/26/高程三复习/">
-              Read More
-            </a>
-          </p>
-        
-      </div>
-    </div>
-
-  
-    </div>
-  
-
-  
-  
-    <div class="post-list">
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2016/12/23/abc/" >
-  前端基础复习笔记
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2016/12/23/abc/"><span class="article-date">
-  2016-12-23
-</span>
-</a>
-        
-
-        
-	<span class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/work/">work</a></li></ul>
-	</span>
-
-
-      </div>
-      <div class="article-entry">
-        
-          <p>巩固复习的基础知识。<br>
-          <p>
-            <a href="/2016/12/23/abc/">
-              Read More
-            </a>
-          </p>
-        
-      </div>
-    </div>
-
-  
-    </div>
-  
-
-  
-  
-    <div class="post-list">
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2016/12/22/Michael-Gambon/" >
-  Michael Gambon(?)
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2016/12/22/Michael-Gambon/"><span class="article-date">
-  2016-12-22
-</span>
-</a>
-        
-
-        
-	<span class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日常/">日常</a></li></ul>
-	</span>
-
-
-      </div>
-      <div class="article-entry">
-        
-          <p><img src="http://ww2.sinaimg.cn/large/005tEyNwgw1fazktg12g9j30go0an0u0.jpg" alt=""></p>
-
-        
-      </div>
-    </div>
-
-  
-    </div>
-  
-
-  
-  
-    <div class="post-list">
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2016/12/22/hello/" >
-  hello
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2016/12/22/hello/"><span class="article-date">
-  2016-12-22
-</span>
-</a>
-        
-
-        
-	<span class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日常/">日常</a></li></ul>
-	</span>
-
-
-      </div>
-      <div class="article-entry">
-        
-          <p>第一篇博客，饶了三四个小时。<br>也顺便看了git。<br>以后会每日更新今天学习的笔记。</p>
-
-        
-      </div>
-    </div>
-
-  
-    </div>
-  
 
 
 
