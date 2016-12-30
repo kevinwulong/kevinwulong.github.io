@@ -8,17 +8,65 @@
 
 <title>
   
-    日常
+    礼拜五
   
 </title>
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="日常">
-<meta property="og:url" content="http://yoursite.com/日常/index.html">
+<meta name="description" content="看了个知乎问题写了几个兼容问题。浏览器兼容性问题
+css一直遇到的就这一个。
+1、 写出来的每个标签默认的padding和margin都不一样
+ 解决方法:
+ *{
+    padding:0;
+    margin:0;
+ }
+2、 水平居中
+FF: margin:0 auto;
+IE: 父级{ text-align:center; }
+
+js的话
+
+1、 
+event.x 和 event.y">
+<meta property="og:type" content="article">
+<meta property="og:title" content="礼拜五">
+<meta property="og:url" content="http://yoursite.com/2016/12/30/礼拜五/index.html">
 <meta property="og:site_name" content="KevinBlog">
-<meta property="og:updated_time" content="2016-12-22T06:45:18.542Z">
+<meta property="og:description" content="看了个知乎问题写了几个兼容问题。浏览器兼容性问题
+css一直遇到的就这一个。
+1、 写出来的每个标签默认的padding和margin都不一样
+ 解决方法:
+ *{
+    padding:0;
+    margin:0;
+ }
+2、 水平居中
+FF: margin:0 auto;
+IE: 父级{ text-align:center; }
+
+js的话
+
+1、 
+event.x 和 event.y">
+<meta property="og:updated_time" content="2016-12-30T07:34:11.937Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="日常">
+<meta name="twitter:title" content="礼拜五">
+<meta name="twitter:description" content="看了个知乎问题写了几个兼容问题。浏览器兼容性问题
+css一直遇到的就这一个。
+1、 写出来的每个标签默认的padding和margin都不一样
+ 解决方法:
+ *{
+    padding:0;
+    margin:0;
+ }
+2、 水平居中
+FF: margin:0 auto;
+IE: 父级{ text-align:center; }
+
+js的话
+
+1、 
+event.x 和 event.y">
 
 
   <link rel="alternative" href="/atom.xml" title="KevinBlog" type="application/atom+xml">
@@ -133,26 +181,60 @@
       
         <div style="max-width: 1000px">
       
-          <article id="page-undefined" class="article article-type-page">
+          <article id="post-礼拜五" class="article article-type-post">
   
     <h1 class="article-header">
-      日常
+      礼拜五
     </h1>
   
   
 
   <div class="article-info">
     <span class="article-date">
-  2016-12-22
+  2016-12-30
 </span>
 
     
 
     
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/work/">work</a></li></ul>
+	</span>
+
 
   </div>
   <div class="article-entry">
-    
+    <p>看了个知乎问题写了几个兼容问题。<br>浏览器兼容性问题</p>
+<pre><code>css一直遇到的就这一个。
+1、 写出来的每个标签默认的padding和margin都不一样
+ 解决方法:
+ *{
+    padding:0;
+    margin:0;
+ }
+2、 水平居中
+FF: margin:0 auto;
+IE: 父级{ text-align:center; }
+
+js的话
+
+1、 
+event.x 和 event.y
+ie下 没有pageX和pageY属性
+firefox下 没有 event.x event.y 属性
+解决方法
+mX = event.x ? event.x : event.pageX;
+mX代替event.x
+
+2、 
+window.event无法再火狐上运行
+火狐的event只能在事件发生的现场使用
+
+解决办法
+function index(e){
+    e = e || window.
+}
+</code></pre>
   </div>
   <footer class="article-footer">
     
