@@ -8,20 +8,20 @@
 
 <title>
   
-    高程复习三
+    2.1
   
 </title>
 
-<meta name="description" content="花了三四天大略地复习了下高程三，接下来看nodejs。">
+<meta name="description" content="今天出去一天休息！明天不去健身一天刷完！">
 <meta property="og:type" content="article">
-<meta property="og:title" content="高程复习三">
-<meta property="og:url" content="http://yoursite.com/2016/12/28/高程复习三/index.html">
+<meta property="og:title" content="2.1">
+<meta property="og:url" content="http://yoursite.com/2017/02/01/2-1/index.html">
 <meta property="og:site_name" content="KevinBlog">
-<meta property="og:description" content="花了三四天大略地复习了下高程三，接下来看nodejs。">
-<meta property="og:updated_time" content="2016-12-28T06:27:59.059Z">
+<meta property="og:description" content="今天出去一天休息！明天不去健身一天刷完！">
+<meta property="og:updated_time" content="2017-02-01T12:13:33.634Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="高程复习三">
-<meta name="twitter:description" content="花了三四天大略地复习了下高程三，接下来看nodejs。">
+<meta name="twitter:title" content="2.1">
+<meta name="twitter:description" content="今天出去一天休息！明天不去健身一天刷完！">
 
 
   <link rel="alternative" href="/atom.xml" title="KevinBlog" type="application/atom+xml">
@@ -136,60 +136,30 @@
       
         <div style="max-width: 1000px">
       
-          <article id="post-高程复习三" class="article article-type-post">
+          <article id="post-2-1" class="article article-type-post">
   
     <h1 class="article-header">
-      高程复习三
+      2.1
     </h1>
   
   
 
   <div class="article-info">
     <span class="article-date">
-  2016-12-28
+  2017-02-01
 </span>
 
     
 
     
 	<span class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/work/">work</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日常/">日常</a></li></ul>
 	</span>
 
 
   </div>
   <div class="article-entry">
-    <p>花了三四天大略地复习了下高程三，接下来看nodejs。</p>
-<a id="more"></a>
-<pre><code>查找元素 
-getElementById()
-getElementsByTagName()
-getElementsByName()
-getElementsByClassName()
-操作元素
-getAttribute()
-setAttribute()
-div.setAttribute(&quot;class&quot; , &quot;index&quot;);
-innerHtml()
-innerText()//删除元素的所有子节点，插入文本节点
-
-removeAttribute()
-创建元素
-document.createElement()    
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> div = <span class="built_in">document</span>.createElement(<span class="string">"div"</span>);</div><div class="line">div.id=<span class="string">"abc"</span>;</div><div class="line">div.className=<span class="string">"box"</span>;</div><div class="line"><span class="built_in">document</span>.body.appendChild(div)</div></pre></td></tr></table></figure>
-
-子节点
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> ul = <span class="built_in">document</span>.getElementById(<span class="string">"myul"</span>);</div><div class="line"><span class="keyword">var</span> li = ul.getElementsByTagName(<span class="string">'li'</span>)</div></pre></td></tr></table></figure>
-
-文本节点
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> textNode = <span class="built_in">document</span>.createTextNode(<span class="string">"&lt;strong&gt;Hello&lt;/strong&gt; world!"</span>);</div><div class="line"><span class="keyword">var</span> div = <span class="built_in">document</span>.createElement(<span class="string">"div"</span>);</div><div class="line"> </div><div class="line">div.className=<span class="string">"message"</span>;</div><div class="line">div.appendChild(textNode);</div><div class="line"><span class="built_in">document</span>.body.appendChild(div)</div></pre></td></tr></table></figure>
-
-children属性
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> childCount = element.children.length;</div><div class="line"><span class="keyword">var</span> firstChild  = element.children[<span class="number">0</span>];</div></pre></td></tr></table></figure>
-</code></pre><p>30 事件</p>
-<pre><code>IE：　事件冒泡:最具体的元素接收 向上传播。
-netscape：事件捕获： 最具体的元素最后接收到事件，向下传播 
-</code></pre><p>31 JSONP<br>    由回调函数和数据组成。<br>    <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">xxxxxxx.net/json/?callback=handleResponse</div><div class="line"></div><div class="line"><span class="keyword">var</span> script = <span class="built_in">document</span>.createElement(<span class="string">"script"</span>);</div><div class="line">script.src = <span class="string">"xxxxxxx.net/json/?callback=handleResponse"</span></div></pre></td></tr></table></figure></p>
+    <p>今天出去一天休息！明天不去健身一天刷完！</p>
 
   </div>
   <footer class="article-footer">
