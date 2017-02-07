@@ -78,15 +78,15 @@
           
             
               <li class="tag-list-container">
-                <a href="javascript:;">标签</a>
-                <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/work/">work</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日常/">日常</a><span class="tag-list-count">9</span></li></ul>
+                <a href="javascript:;">標籤</a>
+                <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/work/">work</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日常/">日常</a><span class="tag-list-count">10</span></li></ul>
               </li>
             
           
             
               <li class="archive-list-container">
-                <a href="javascript:;">归档</a>
-                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a><span class="archive-list-count">10</span></li></ul>
+                <a href="javascript:;">彙整</a>
+                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a><span class="archive-list-count">12</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a><span class="archive-list-count">10</span></li></ul>
               </li>
             
           
@@ -133,6 +133,46 @@
         <div style="max-width: 1000px">
       
           
+
+  
+  
+    <div class="post-list">
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2017/02/07/2-7/" >
+  2.7
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2017/02/07/2-7/"><span class="article-date">
+  2017-02-07
+</span>
+</a>
+        
+
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日常/">日常</a></li></ul>
+	</span>
+
+
+      </div>
+      <div class="article-entry">
+        
+          <p>面试发现自己css太差了。。今天恶补中</p>
+
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
 
   
   
@@ -494,55 +534,10 @@
     </div>
   
 
-  
-  
-    <div class="post-list">
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2017/01/04/原型/" >
-  原型
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2017/01/04/原型/"><span class="article-date">
-  2017-01-04
-</span>
-</a>
-        
-
-        
-	<span class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/work/">work</a></li></ul>
-	</span>
-
-
-      </div>
-      <div class="article-entry">
-        
-          <p><em>proto</em>     是对象的内置属性<br>    是js内部使用寻找原型链的属性<br>    <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</div><div class="line"><span class="built_in">console</span>.log(a.__proto__);</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">this</span>.name = <span class="number">1</span>;</div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(fn.__proto__);</div><div class="line"><span class="keyword">var</span> obj = &#123;</div><div class="line">    <span class="attr">name</span> : <span class="number">1</span></div><div class="line">&#125;;</div><div class="line"><span class="built_in">console</span>.log(obj.__proto__);</div><div class="line"><span class="comment">//[Number:0]</span></div><div class="line"><span class="comment">//[Function]</span></div><div class="line"><span class="comment">//&#123;&#125;</span></div></pre></td></tr></table></figure></p>
-<pre><code>任何变量都有这个属性除了null。
-</code></pre><p>prototype是函数的内置属性<br>    是一个指针，指向一个对象，显示修改对象的原型的属性。<br>     <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</div><div class="line"><span class="built_in">console</span>.log(a.prototype);</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">this</span>.name = <span class="number">1</span>;</div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(fn.prototype);</div><div class="line"><span class="keyword">var</span> obj = &#123;</div><div class="line">    <span class="attr">name</span> : <span class="number">1</span></div><div class="line">&#125;;</div><div class="line"><span class="built_in">console</span>.log(obj.prototype);</div><div class="line"><span class="comment">//undefined</span></div><div class="line"><span class="comment">//fn()&#123;&#125;</span></div><div class="line"><span class="comment">//undefined</span></div></pre></td></tr></table></figure></p>
-<pre><code>只有函数有prototype
-</code></pre> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> kevin= <span class="keyword">new</span> Man();</div></pre></td></tr></table></figure>
-<p>1 新建一个对象 kevin={}<br>2 Man.call(kevin , name , age);<br>3 kevin.<em>proto</em> = Man.prototype</p>
-
-        
-      </div>
-    </div>
-
-  
-    </div>
-  
-
 
 
   <div class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">下一页</a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">下一頁</a>
   </div>
 
 
